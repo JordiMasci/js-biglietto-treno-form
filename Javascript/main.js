@@ -31,20 +31,20 @@ buttonSend.addEventListener('click', function(){
     namePerson.innerHTML = userName.value
 
     // Prezzo finale
-    let priceTotalKm = parseInt(userKm.value) * priceKm
+    let totalPrice = parseInt(userKm.value) * priceKm
 
     // Sconto
     if (parseInt(userAge.value) < 18){
-        let priceTotalKm = parseInt(userKm.value) * priceKm * 0.2
-        finalText.innerHTML = priceTotalKm
+        let discountKm = parseInt(userKm.value) * priceKm * 0.2
+        console.log(discountKm)
+        totalPrice = totalPrice - discountKm
     } else if (parseInt(userAge.value) > 65) { 
-        let priceTotalKm = parseInt(userKm.value) * priceKm * 0.4
-        finalText.innerHTML = priceTotalKm
-    } else {
-        finalText.innerHTML = priceTotalKm
-    }
+        let discountKm = parseInt(userKm.value) * priceKm * 0.4
+        console.log(discountKm)
+        totalPrice = totalPrice - discountKm
+    } 
+    finalText.innerHTML = totalPrice
 })
-
 
 
 

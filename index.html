@@ -13,34 +13,62 @@
       crossorigin="anonymous"
     />
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
     <!-- Javascript -->
     <script src="Javascript/main.js" text="text/javascript" defer></script>
   </head>
   <body>
-    <div class="container">
-      <button id="send-text" class="btn btn-primary mt-3 mb-3">bottone</button>
+    <div class="container text-center">
+      <h1 class="mt-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
-      <input
-        id="name-user"
-        type="text"
-        class="form-control mb-3 w-50"
-        placeholder="name"
-        aria-label="First name"
-      />
-      <input
-        id="km-to-go"
-        type="text"
-        class="form-control w-50 mb-3"
-        placeholder="km"
-        aria-label="First name"
-      />
-      <input
-        id="age-user"
-        type="text"
-        class="form-control w-50"
-        placeholder="age"
-        aria-label="First name"
-      />
+      <!-- CARD-1 -->
+      <div class="card">
+        <div class="container">
+          <div class="row">
+            <div class="col p-5">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                id="name-user"
+                type="text"
+                class="form-control mb-3 "
+                placeholder="name"
+                aria-label="First name"
+              />
+            </div>
+            <div class="col p-5">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                id="km-to-go"
+                type="text"
+                class="form-control  mb-3"
+                placeholder="km"
+                aria-label="First name"
+              />
+            </div>
+            <div class="col p-5">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                id="age-user"
+                type="text"
+                class="form-control "
+                placeholder="age"
+                aria-label="First name"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+            <button id="send-text" class="btn btn-primary mt-3 mb-3 bottone-calcolo">
+              Bottone
+            </button>
+            <button class="btn btn-primary mt-3 mb-3 bottone-calcolo">
+              Annulla
+            </button>
+        </div>
+      </div>
 
       <hr />
 
