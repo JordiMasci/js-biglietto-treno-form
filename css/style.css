@@ -2,10 +2,13 @@ body {
     background-color: #b91350;
 }
 
+/* TITOLI */
 h1 {
     color: white;
 }
 
+
+/* BOTTONI */
 .bottone-calcolo {
     margin-right: 10px;
     border: 2px solid gray;
@@ -14,5 +17,24 @@ h1 {
 }
 
 .btn:hover {
-    
+    border: 2px solid rgb(228, 228, 19);
+    background-color: lightgray;
+    color: #b91350;
+}
+
+/* CARD-2 */
+.card-title {
+    text-align: left;
+}
+
+.card-2 {
+    padding: 1rem;
+
+}
+
+.name-passenger {
+    background-color: gray;
+    min-height: 150px;
+    text-align: left;
+    padding: 1rem;
 }
